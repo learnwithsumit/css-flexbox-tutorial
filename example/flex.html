@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox</title>
+    <link rel="stylesheet" href="./base.css" />
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .container-1-1 {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+      }
+
+      .container-1-2 {
+        display: flex;
+        flex-basis: 100%;
+      }
+
+      .item {
+        flex-grow: 1;
+      }
+
+      @media (min-width: 768px) {
+        .container-1-1 {
+          flex-direction: row;
+          flex-wrap: wrap;
+          flex-basis: 60%;
+        }
+        .container-1-2 {
+          flex-basis: 40%;
+        }
+        .a {
+          flex-basis: 50%;
+        }
+        .b {
+          flex-basis: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="container">
+        <div class="container-1-1">
+          <div class="item a">A</div>
+          <div class="item b">B</div>
+          <div class="item d">D</div>
+        </div>
+        <div class="container-1-2">
+          <div class="item c">C</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
