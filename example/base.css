@@ -48,13 +48,3 @@ body {
 .d {
   background-color: rebeccapurple;
 }
-
-/* @media (max-width: 768px) {
-  .structure-1,
-  .structure-2,
-  .f,
-  .structure-2-2 {
-    flex: 1 1 100%;
-    min-height: 480px;
-  }
-} */
